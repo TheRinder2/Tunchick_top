@@ -12,39 +12,35 @@
 
     <style>
         .img_main {
+            /* центровка */
             margin: auto;
+            /* размеры */
             width: 60em;
             height: 50em;
+            /* скругление */
             border-radius: 70px;
         }
 
         .giff {
-            /* background-color: red; */
-            background-repeat: round;
+            /* размерчики на 100% свободного места */
             height: 100%;
             width: 100%;
-            /* background-image: url("https://i.gifer.com/NRI0.gif"); */
+            /* анимация длиной в 10 секунд и повторяющаяся бесконечно */
             animation: 10s infinite giffy;
         }
 
+        /* сама эта анимашка */
         @keyframes giffy {
+
+            /* начальный кадр убираем задний фон */
             0% {
                 background-image: url('');
             }
 
+            /* ставим гиф на задний фон и 10% длины анимашки оно работает с гифкой на фоне, остальные 90% - без */
             90% {
                 background-image: url('https://i.gifer.com/NRI0.gif');
             }
-
-            100% {
-                background-image: url('https://i.gifer.com/NRI0.gif');
-            }
-        }
-
-        center {
-            margin-top: auto;
-            position: relative;
-            font-size: 30px;
         }
     </style>
 
@@ -90,15 +86,21 @@
                     ERROR
                 </div>
             </a>
+            <!-- гифка -->
             <i class="giff"></i>
-            <a style="margin: 0 auto 0 auto; font-size: 30px; color: rgba(244, 165, 96, 0.192);"
-                href="https://vk.com/dimitriy_top"
-                target="_blank"
-                >
+            <!-- ссылка на мой вк -->
+            <a style="
+            /* горизонтальная центровка */
+            margin: 0 auto 0 auto;
+            /* размер шрифта */
+            font-size: 30px;
+            /* цвет текста */
+            color: rgba(244, 165, 96, 0.192);" href="https://vk.com/dimitriy_top" target="_blank">
                 Made by Dimitriy
             </a>
 
         </div>
+        <!-- кантинка по заказу -->
         <img class="img_main" src="images/15.jpg">
     </div>
 </body>
