@@ -9,6 +9,45 @@
     <link rel="shortcut icon" href="images/icon.png" type="image/png">
     <!-- ссылка на CSS со стилями -->
     <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        .img_main {
+            margin: auto;
+            width: 60em;
+            height: 50em;
+            border-radius: 70px;
+        }
+
+        .giff {
+            /* background-color: red; */
+            background-repeat: round;
+            height: 100%;
+            width: 100%;
+            /* background-image: url("https://i.gifer.com/NRI0.gif"); */
+            animation: 10s infinite giffy;
+        }
+
+        @keyframes giffy {
+            0% {
+                background-image: url('');
+            }
+
+            90% {
+                background-image: url('https://i.gifer.com/NRI0.gif');
+            }
+
+            100% {
+                background-image: url('https://i.gifer.com/NRI0.gif');
+            }
+        }
+
+        center {
+            margin-top: auto;
+            position: relative;
+            font-size: 30px;
+        }
+    </style>
+
 </head>
 
 <!-- тело окумента -->
@@ -29,7 +68,7 @@
             /* расположение текста  */
             text-align: center;
             /* нулевые внешние отступы по краям */
-            margin: 0px;">
+            margin: -20px 0 0 0">
                 Менюшка
             </p>
             <!-- ссылки-кнопочки -->
@@ -51,8 +90,16 @@
                     ERROR
                 </div>
             </a>
+            <i class="giff"></i>
+            <a style="margin: 0 auto 0 auto; font-size: 30px; color: rgba(244, 165, 96, 0.192);"
+                href="https://vk.com/dimitriy_top"
+                target="_blank"
+                >
+                Made by Dimitriy
+            </a>
 
         </div>
+        <img class="img_main" src="images/15.jpg">
     </div>
 </body>
 
